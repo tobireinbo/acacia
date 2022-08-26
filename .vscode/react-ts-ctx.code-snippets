@@ -1,0 +1,16 @@
+{
+  "React Typescript Context": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "react-ts-ctx",
+    "body": [
+      "import React from 'react'",
+      "interface ContextProps {\n//states\n//functions\n}",
+      "const createDefault = (): ContextProps => ({\n//states\n//functions\n});",
+      "export const $1Context = React.createContext<ContextProps>(createDefault());",
+      "export const $1Provider: React.FC = ({children}) => {",
+      "return (\n<$1Context.Provider value={{}}>\n{children}\n</$1Context.Provider>\n);\n};",
+      "export const use$1 = () => React.useContext($1Context);"
+    ],
+    "description": ""
+  }
+}

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/assets/fonts/DM_Sans/DMSans-Regular.ttf");
+}
+
+:root {
+  --color-primary: #ffd738;
+  --color-primary-light: #ffe77b;
+  --color-primary-dark: #fff7d5;
+  --color-secondary: #a8e06f;
+  --color-secondary-light: #d4ffa8;
+  --color-secondary-dark: rgb(133, 194, 72);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: DMSans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+#__next,
+html,
+body {
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  @apply text-2xl font-black dark:text-white text-black;
+}
+h2 {
+  @apply text-xl font-bold dark:text-white text-black;
+}
+h3 {
+  @apply text-lg dark:text-white text-black;
+}
+h4 {
+  @apply text-base dark:text-white text-black;
+}
+h5 {
+  @apply text-sm text-neutral-400 dark:text-neutral-500;
+}
+h6 {
+  @apply text-xs text-neutral-400 dark:text-neutral-500;
+}
+
+p {
+  @apply text-base text-neutral-600 dark:text-neutral-400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @apply leading-snug;
+}
+
+label,
+li,
+code,
+div {
+  @apply text-black dark:text-white;
+}
+
+hr {
+  @apply border-stone-300 dark:border-stone-700;
+}
+
+.table {
+  @apply border-collapse rounded overflow-hidden text-left;
+}
+
+.table td,
+.table th {
+  @apply border-stone-300 border-b dark:border-stone-700 p-2;
+}
+
+.table th {
+  @apply bg-stone-100 dark:bg-stone-800;
+}
+
+.table td {
+  @apply bg-white dark:bg-stone-900;
+}

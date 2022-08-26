@@ -1,0 +1,8 @@
+{
+  "JSX With Style": {
+    "scope": "javascript,typescript,javascriptreact,typescriptreact",
+    "prefix": "jsx-style",
+    "body": ["<>", "<style jsx>{`", "$1", "`}</style>", "</>"],
+    "description": ""
+  }
+}
